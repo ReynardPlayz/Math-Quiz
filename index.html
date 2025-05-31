@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="src/output.css" rel="stylesheet">
+    <style></style>
+</head>
+<body class="m-2">
+    <div class="display">
+        <button data-id="0" class="content-center text-center w-[50px] h-[50px] menu"><img src="./menu.png"></button>
+        <ul class="list-disc hidden">
+        </ul>
+    </div>
+    <div class="start h-screen content-center place-items-center">
+        <div class="text-5xl mb-10">
+            Click to Start!
+        </div>
+        <button class="btn-start border border-black rounded-xl text-8xl p-5 hover:bg-blue-500">Start</button>
+    </div>
+    <div class="box h-screen content-center place-items-center hidden">
+        <div class="question text-7xl flex gap-5 mb-20">
+            <div class="number1">123</div>
+            <div class="operator">+</div>
+            <div class="number2">23</div>
+        </div>
+        <div class="answer flex text-2xl gap-3">
+            <button data-id="0" class="border pointer- border-black rounded-2xl content-center text-center w-[50px] h-[50px] hover:bg-gray-300 hover:scale-120 duration-400 ease-in-out">1</button>
+            <button data-id="1"class="border border-black rounded-2xl content-center text-center w-[50px] h-[50px] hover:bg-gray-300 hover:scale-120 duration-400 ease-in-out">2</button>
+            <button data-id="2" class="border border-black rounded-2xl content-center text-center w-[50px] h-[50px] hover:bg-gray-300 hover:scale-120 duration-400 ease-in-out">3</button>
+            <button data-id="3" class="border border-black rounded-2xl content-center text-center w-[50px] h-[50px] hover:bg-gray-300 hover:scale-120 duration-400 ease-in-out">4</button>
+            <button data-id="4"class="border border-black rounded-2xl content-center text-center w-[50px] h-[50px] hover:bg-gray-300 hover:scale-120 duration-400 ease-in-out">5</button>
+        </div>
+    </div>
+    <div class="end h-screen content-center place-items-center hidden">
+        <div class="title text-3xl mb-10"></div>
+        <button onclick="random(), hide()" class="btn-restart border border-black rounded-xl text-8xl p-5 hover:bg-blue-500">Retry?</button>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
